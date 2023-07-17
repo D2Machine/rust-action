@@ -1,0 +1,23 @@
+name: Integration test for new action version
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  it:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Verify that Docker image can be built
+        run: |
+          docker build .
+      - name: Run tests of subdir `integration-test`
+        uses: ./
+        with:
+          args: |
+            cargo fmt --manifest-path integration-test/Cargo.toml -- --check \
+                && cargo clippy --manifest-path integration-test/Cargo.toml -- -Dwarnings \
+                && cargo test --manifest-path integration-test/Cargo.toml
