@@ -2,11 +2,11 @@
 
 'Silverbullet' for a quickstart Rust CI based upon [Github Actions](https://developer.github.com/actions/)
 
-[![img](https://img.shields.io/badge/Rust-1.74.1-orange)](https://blog.rust-lang.org/2023/12/07/Rust-1.74.1.html)
+[![img](https://img.shields.io/badge/Rust-1.80.1-orange)](https://blog.rust-lang.org/2024/08/08/Rust-1.80.1.html)
 
 *What's inside the "box":*
 
-* Rust 1.74.1
+* Rust 1.80.1
 * Rustfmt
 * Clippy
 * Cargo Release
@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: mirlahiji/rust-action@master
+      - uses: MachineDynamo/rust-action@master
         with:
           args: cd integration-test && cargo fmt -- --check && cargo clippy -- -Dwarnings && cargo test
 ```

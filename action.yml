@@ -1,6 +1,6 @@
 name: "Rust Action Box"
 description: "'Silverbullet' for a quickstart Rust CI based upon Github Actions"
-author: "Delaram Mirlahiji"
+author: "MachineDynamo"
 branding:
   icon: "play-circle"
   color: "gray-dark"

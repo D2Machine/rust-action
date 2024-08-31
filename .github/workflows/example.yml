@@ -8,6 +8,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: mirlahiji/rust-action@master
+      - uses: MachineDynamo/rust-action@master
         with:
           args: cd integration-test && cargo fmt -- --check && cargo clippy -- -Dwarnings && cargo test
