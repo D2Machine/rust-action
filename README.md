@@ -2,11 +2,11 @@
 
 'Silverbullet' for a quickstart Rust CI based upon [Github Actions](https://developer.github.com/actions/)
 
-[![img](https://img.shields.io/badge/Rust-1.80.1-orange)](https://blog.rust-lang.org/2024/08/08/Rust-1.80.1.html)
+[![img](https://img.shields.io/badge/Rust-1.81.0-orange)](https://blog.rust-lang.org/2024/09/05/Rust-1.81.0.html)
 
 *What's inside the "box":*
 
-* Rust 1.80.1
+* Rust 1.81.0
 * Rustfmt
 * Clippy
 * Cargo Release
